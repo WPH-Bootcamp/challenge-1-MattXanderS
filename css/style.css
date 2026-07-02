@@ -93,13 +93,16 @@ h1, h2, h3 {
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-.btn-primary {
+.btn-primary, .btn-secondary {
   display: inline-block;
   padding: 0.8rem 2rem;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
   transition: transform 0.2s;
+}
+
+.btn-primary {
   background-color: #2b6cb0;
   color: white;
 }
@@ -107,4 +110,41 @@ h1, h2, h3 {
 .btn-primary:hover {
   background-color: #2c5282;
   transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #2b6cb0;
+  color: #2b6cb0;
+}
+
+.about-section {
+  padding: 5rem 10%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.card {
+  flex: 1;
+  background-color: #2b6cb0;
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.text-card {
+    color: white;
 }
